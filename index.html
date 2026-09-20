@@ -204,11 +204,12 @@
           </ul>
             <div class="card__links">
               <a href="https://github.com/Medalisekri/glass_vault" target="_blank" rel="noopener noreferrer" class="card__link">View on GitHub →</a>
-            </div>
+           
             
              <a href="https://github.com/Medalisekri/glass_vault/releases/download/v1.0.0/GlassVault" target="_blank" rel="noopener noreferrer" class="card__link">
-                                    Download the Demo for Android →
+                                    Download for Android →
             </a>
+             </div>
           </div>
         </article>
 
@@ -230,15 +231,65 @@
                 <li>🎮 <strong>Algorithmic Challenge:</strong> Coded pure Dart logic to dynamically synthesize randomized, fair multiple-choice distractors across 4 distinct quiz modes.</li>
                 <li>🔒 <strong>Network Security:</strong> Configured a robust Dio HTTP client integrated with environment variables (`flutter_dotenv`) to keep API keys out of source control.</li>
               </ul>
+                  <div class="card__links">
             <a href="https://github.com/Medalisekri/world_quiz" target="_blank" rel="noopener noreferrer" class="card__link">View on GitHub →</a><br>
             
              <a href="https://github.com/Medalisekri/world_quiz/releases/download/v1.0.0/WorldQuiz" target="_blank" rel="noopener noreferrer" class="card__link">
                  
-                    Download the Demo for Android →
+                    Download for Android →
             </a>
+            </div>
           </div>
         </article>
-
+        <article class="card">
+  <div class="card__img card__img--screenshot card__img--retrieva-backend">
+    <img src="images/retback.png" alt="Retrieva — Lost & Found REST API" />
+    <div class="card__img-overlay"></div>
+    <div class="card__platform-badge">Backend</div>
+  </div>
+  <div class="card__info">
+    <div class="card__number">02</div>
+    <div class="card__tags">
+      <span>Django</span><span>PostgreSQL</span><span>Firebase</span>
+    </div>
+    <h3>Retrieva — Lost & Found REST API</h3>
+    <p>Built a production REST API for a lost-and-found platform, handling authentication, item lifecycle, real-time chat, and intelligent item matching — deployed on Render with a Neon PostgreSQL database.</p>
+    <ul class="card__features">
+      <li>🔐 <strong>Hybrid Auth:</strong> Bridged Firebase Auth and Django by verifying ID tokens server-side with the Admin SDK, mapping Firebase UIDs to Django users without duplicating auth logic.</li>
+      <li>🔍 <strong>Fuzzy Matching:</strong> Implemented Python <code>SequenceMatcher</code> to detect similar lost/found item names across recent posts and automatically notify both owners on a match.</li>
+      <li>💬 <strong>Chat System:</strong> Designed bidirectional conversation lookup using Django Q objects and soft-delete messaging with OneSignal push notifications on every new message.</li>
+      <li>🛡️ <strong>API Hardening:</strong> Added rate limiting (5 posts/day), auto-expiry (60-day listings), owner-only permissions, and full test coverage for all permission and filter logic.</li>
+    </ul>
+    <div class="card__links">
+      <a href="https://github.com/Medalisekri/retrieva_backend" target="_blank" rel="noopener noreferrer" class="card__link">View on GitHub →</a>
+    </div>
+  </div>
+</article>
+<article class="card">
+  <div class="card__img card__img--screenshot card__img--retrieva-app">
+    <img src="images/retfront.jpg" alt="Retrieva — Lost & Found Mobile App" />
+    <div class="card__img-overlay"></div>
+    <div class="card__platform-badge">Mobile</div>
+  </div>
+  <div class="card__info">
+    <div class="card__number">03</div>
+    <div class="card__tags">
+      <span>Flutter</span><span>Riverpod</span><span>GoRouter</span>
+    </div>
+    <h3>Retrieva — Lost & Found Mobile App</h3>
+    <p>Built the Flutter client for Retrieva — a full-featured lost-and-found app with maps, real-time chat, push notifications, and offline support. Communicates with a custom Django REST API using Firebase ID tokens for auth.</p>
+    <ul class="card__features">
+      <li>🏗️ <strong>Clean Architecture:</strong> Enforced a strict 3-layer separation (Screens ➔ Providers ➔ Repositories) so no screen ever touches Dio or API logic directly.</li>
+      <li>🔄 <strong>Token Lifecycle:</strong> Built a Dio interceptor that silently attaches Firebase tokens and retries failed requests on <code>401</code> — eliminating session drops after token expiry.</li>
+      <li>🗺️ <strong>Map & Geocoding:</strong> Integrated <code>flutter_map</code> with client-side bounds filtering and Nominatim reverse geocoding to render only visible pins without performance hits.</li>
+      <li>📶 <strong>Offline Support:</strong> Cached the last item fetch in SharedPreferences so users can browse listings even without an internet connection.</li>
+    </ul>
+    <div class="card__links">
+      <a href="https://github.com/Medalisekri/retrieva_frontend" target="_blank" rel="noopener noreferrer" class="card__link">View on GitHub →</a><br>
+      <a href="https://github.com/Medalisekri/retrieva_frontend/releases/download/v1.0.1/Retrieva.apk" target="_blank" rel="noopener noreferrer" class="card__link">Download for Android →</a><span style="font-size:0.7em; opacity:0.6;">(First launch may be slow)</span>
+    </div>
+  </div>
+</article>
       </div>
     </div>
   </section>
