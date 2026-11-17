@@ -184,34 +184,32 @@
 
       
 
-        <article class="card">
-           <div class="card__img card__img--screenshot card__img--glassvault">
-            <img src="images/glassvault.png" alt="GlassVault — Real-Time Finance App" />
-            <div class="card__img-overlay"></div>
-            <div class="card__platform-badge">Mobile</div>
-          </div>
-            <div class="card__info">
-            <div class="card__number">01</div>
-            <div class="card__tags">
-            <span>Flutter</span><span>Firebase</span><span>Riverpod</span>
-          </div>
-          <h3>GlassVault — Real-Time Finance App</h3>
-          <p>Engineered a modern personal finance app designed to tackle real-time state synchronization and multi-tenant data security. Bypassed messy UI logic by implementing a strict 3-layer architecture (UI ➔ Providers ➔ Repositories ➔ Firebase).</p>
-          <ul class="card__features">
-            <li>🔐 <strong>Security Engineering:</strong> Enforced strict per-user data isolation using server-side Firestore security rules (`request.auth.uid`) to guarantee zero-leak privacy.</li>
-            <li>⚡ <strong>State Management:</strong> Managed reactive Firestore streams with Riverpod <code>StateNotifier</code> to prevent silent stream drops and sync running totals instantly.</li>
-            <li>🎨 <strong>UI & UX Polish:</strong> Built custom Glassmorphism frosted-glass cards over gradient backgrounds paired with robust field-level inline error handling.</li>
-          </ul>
-            <div class="card__links">
-              <a href="https://github.com/Medalisekri/glass_vault" target="_blank" rel="noopener noreferrer" class="card__link">View on GitHub →</a>
-           
-            
-             <a href="https://github.com/Medalisekri/glass_vault/releases/download/v1.0.0/GlassVault" target="_blank" rel="noopener noreferrer" class="card__link">
-                                    Download for Android →
-            </a>
-             </div>
-          </div>
-        </article>
+            <article class="card">
+      <div class="card__img card__img--screenshot card__img--glassvault">
+        <img src="images/glassvault.png" alt="GlassVault — Bilingual Expense & Budget Tracker" />
+        <div class="card__img-overlay"></div>
+        <div class="card__platform-badge">Mobile</div>
+      </div>
+      <div class="card__info">
+        <div class="card__number">01</div>
+        <div class="card__tags">
+          <span>Flutter</span><span>Firebase</span><span>Riverpod</span><span>GoRouter</span><span>fl_chart</span>
+        </div>
+        <h3>Dinarna — Expense &amp; Budget Tracker</h3>
+        <p>A bilingual personal finance app that goes beyond simple CRUD: real-time expense tracking, monthly budgets, category analytics and exportable PDF reports — fully localized in English and Tunisian Arabic with RTL support. Built on a strict 3-layer architecture and hardened for Google Play submission.</p>
+        <ul class="card__features">
+          <li>🏗️ <strong>Clean Architecture &amp; Routing:</strong> Enforced a strict Screens ➔ Providers ➔ Repositories ➔ Firebase separation, with <code>GoRouter</code> auth guards driven by <code>refreshListenable</code> so expired sessions redirect instantly instead of crashing protected screens.</li>
+          <li>⚡ <strong>Reactive State &amp; UX:</strong> Riverpod <code>StreamNotifier</code> for live Firestore streams and <code>AsyncNotifier</code> for one-shot actions — giving skeleton loaders, error states and double-submit protection for free, paired with swipe-to-delete confirmation and animated totals.</li>
+          <li>🌍 <strong>Localization &amp; Theming:</strong> Compile-safe ARB translations via <code>gen-l10n</code> for English and Tunisian dialect, automatic RTL layout flip, and one centralized theme file powering dark/light modes plus per-category colors and icons.</li>
+          <li>📊 <strong>Insights &amp; PDF Export:</strong> <code>fl_chart</code> category breakdown, month-by-month navigation and color-coded budget progress; multi-page PDF reports generated with embedded static Cairo fonts to solve Arabic letter shaping and RTL rendering.</li>
+          <li>🔐 <strong>Security &amp; Offline:</strong> Per-user Firestore rules separating <code>create</code> from <code>read/update/delete</code>, in-app account and data deletion for Play Store compliance, and Firestore native persistence for offline use instead of a fragile custom sync layer.</li>
+        </ul>
+        <div class="card__links">
+          <a href="https://github.com/Medalisekri/Dinarna" target="_blank" rel="noopener noreferrer" class="card__link">View on GitHub →</a>
+          <a href="https://github.com/Medalisekri/Dinarna/releases/download/v1.0.0/Dinarna.apk" target="_blank" rel="noopener noreferrer" class="card__link">Download for Android →</a>
+        </div>
+      </div>
+    </article>
 
              <article class="card">
           <div class="card__img card__img--screenshot card__img--worldquiz">
